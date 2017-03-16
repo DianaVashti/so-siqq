@@ -1,12 +1,17 @@
 {
-  "presets" : [
+  "presets": [
     "es2015",
     "es2016",
-    "stage-0",
     "react"
   ],
   "plugins": [
-    "transform-runtime",
-    "transform-class-properties"
+    "transform-class-properties",
+    "transform-object-rest-spread",
+    ["transform-regenerator", {"async": false}],
+    ["transform-runtime", {
+      "helpers": false,
+      "polyfill": false,
+      "regenerator": true,
+    }]
   ]
 }
