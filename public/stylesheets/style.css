@@ -1,0 +1,19 @@
+body {
+  background-color: floralwhite;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-header-footer {
+  background-color: lemonchiffon;
+}
+
+.BlogCard-Block {
+  width: 69%;
+  height: 33%;
+  min-width: 400px;
+  min-height: 300px;
+}
