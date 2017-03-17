@@ -9,14 +9,32 @@ import {
 } from 'material-ui/Card'
 import FlatButton from 'material-ui/FlatButton'
 import Toggle from 'material-ui/Toggle'
+// import fetchMethod from './fetchMethod'
 
 export default class BlogCard extends Component {
 
   constructor(props) {
-    super(props);
+    super(props)
+
     this.state = {
       expanded: false,
+      posts: [],
     }
+  }
+
+  postList() {
+    const path = //main get route
+
+    return fetchMethod('GET', path, null)
+      .then(coaches => {
+        this.setState({
+        posts: posts
+      })
+    })
+  }
+
+  componentWillMount(){
+    this.postList()
   }
 
   handleExpandChange = (expanded) => {
